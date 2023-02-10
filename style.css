@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+header {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px 0;
+}
+nav {
+    background-color: #005db9;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 4em;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #00bfff;
+    cursor: pointer;
+}
+main {
+    padding: 8em 2em 1em 2em;
+}
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 2px #333;
+    padding: 2em;
+    text-align: center;
+    margin: 2em auto;
+    width: 80%;
+    border-radius: 5px;
+    animation: cardEntry 0.5s ease-in-out;
+}
+.card h2 {
+    margin-top: 0;
+}
+@keyframes cardEntry {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.01s ease;
+}
+.btn:hover {
+    background-color: #00bfff;
+}
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px #333;
+}
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin: 0 0 -10px -10px;
+}

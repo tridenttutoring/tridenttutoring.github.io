@@ -4,51 +4,43 @@ body {
     background-color: #f2f2f2;
     overflow-x: hidden;
 }
-header {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    text-align: center;
-    padding: 1em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-header h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0px 0;
-}
-nav {
-    background-color: #005db9;
-    color: white;
-    text-align: center;
-    padding: 0.5em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    top: 4em;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 1em;
-    display: inline-block;
-}
 nav a:hover {
     background-color: #00bfff;
     cursor: pointer;
 }
-main {
-    padding: 8em 2em 1em 2em;
+#tttitle {
+    font-size: calc(40px + 2.25vw);
 }
-.card {
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+header.masthead:before {
+    content: "";
+    position: absolute;
+    background-color: #1c375e;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+header.masthead h1, header.masthead .h1 {
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3rem;
+    }
+}
+.card-info {
     background-color: white;
     box-shadow: 2px 2px 2px #333;
     padding: 2em;
@@ -58,7 +50,7 @@ main {
     border-radius: 5px;
     animation: cardEntry 0.5s ease-in-out;
 }
-.card h2 {
+.card-info h2 {
     margin-top: 0;
 }
 @keyframes cardEntry {
@@ -69,22 +61,10 @@ main {
         opacity: 1;
     }
 }
-.btn {
-    background-color: #1e90ff;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.01s ease;
-}
-.btn:hover {
-    background-color: #00bfff;
-}
-.btn:active {
-    transform: translateY(2px);
-    box-shadow: 0px 0px 5px #333;
+.category.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fafafa;
 }
 footer {
     background-color: #1e90ff;
@@ -92,5 +72,4 @@ footer {
     text-align: center;
     padding: 1em;
     width: 100%;
-    margin: 0 0 -10px -10px;
 }

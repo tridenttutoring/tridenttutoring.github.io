@@ -40,36 +40,187 @@ nav a:hover {
         font-size: 3rem;
     }
 }
-.card-info {
-    background-color: white;
-    box-shadow: 2px 2px 2px #333;
-    padding: 2em;
-    text-align: center;
-    margin: 2em auto;
-    width: 80%;
-    border-radius: 5px;
-    animation: cardEntry 0.5s ease-in-out;
-}
-.card-info h2 {
-    margin-top: 0;
-}
-@keyframes cardEntry {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 .category.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: #fafafa;
 }
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #68A4C4;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #85b6cf;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f3f8fa;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.info .container {
+  box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
+  background: #fff;
+}
+
+.info .icon-box+.icon-box {
+  margin-top: 50px;
+}
+
+.info .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: #f3f8fa;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.info .icon-box .icon i {
+  color: #68A4C4;
+  font-size: 32px;
+}
+
+.info .icon-box:hover .icon {
+  background: #68A4C4;
+}
+
+.info .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.info .icon-box .title {
+  margin-left: 95px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.info .icon-box .title a {
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.info .icon-box .title a:hover {
+  color: #68A4C4;
+}
+
+.info .icon-box .description {
+  margin-left: 95px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.why-us {
+  padding-bottom: 20px;
+}
+
+.why-us .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  background: #fff;
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.why-us .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+}
+
+.why-us .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.why-us .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.why-us .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.why-us .icon-box-blue .icon {
+  background: #e1eeff;
+}
+
+.why-us .icon-box-blue .icon i {
+  color: #2282ff;
+}
+
+.why-us .icon-box-blue:hover {
+  border-color: #2282ff;
+}
+
+.subjects .row {
+  margin-top: 50px;
+}
+
+.subjects h3 {
+  font-size: 21px;
+  font-weight: 420;
+}
+
 footer {
-    background-color: #1e90ff;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    width: 100%;
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
 }

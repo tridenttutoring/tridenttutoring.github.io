@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <title>Trident Tutoring</title>
     </head>
     <body>
@@ -67,14 +68,20 @@
             </nav>
         </header>
         <!-- End Navbar -->
-        <main style="min-height:75vh;">
-            <div class="container mt-3">
+        <main>
+            <div class="container mt-3 mb-3">
+              <div class="subjects">
                 <h1>STEM</h1>
-                <p>Trident Tutoring offers a variety of in-depth courses to help equip pupils for any futures in the STEM field, 
-                    which is growing in importance every day. Whether it's computer programming, problem-solving mathematics or GCSE Biology, 
-                    our tutors can help to cultivate interest and skill in these fields. 
-                    Within each of these fields we can explore more specific areas according to the student's interests, 
-                    for example, application development or machine learning for computer programming.</p>
+                <div class="row" data-aos="fade-in">
+                  <div class="col-md-5">
+                    <img src="stem.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-md-7">
+                    <h3 class="fst-italic">At Trident Tutoring, we prepare students for the rapidly evolving world of STEM. Our tutoring service equips students with the skills to succeed in a variety of fields, including computer programming, mathematics, and science. Our computer science tuition covers a range of popular languages such as Python, Swift, and JavaScript, and our experienced tutors can help your child develop the skills needed to build applications, websites, and more. We also offer specialized tuition in machine learning and artificial intelligence, providing opportunities to explore cutting-edge technologies. In maths, we focus on developing problem-solving skills and understanding mathematical concepts, applying these skills to real-world problems. Our science courses cover a range of topics, and we can teach GCSE physics, chemistry and biology, helping students explore the scientific principles that govern the natural world. Whether your child wants to become a computer programmer, mathematician, or scientist, we have the expertise to help them achieve their goals.
+                    </h3>
+                  </div>
+                </div>
+              </div>
             </div>
         </main>
         <!-- Footer -->
@@ -83,6 +90,7 @@
         </footer>
         <!-- End Footer -->
         <script src="main.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -4,6 +4,10 @@ body {
     background-color: #f2f2f2;
     overflow-x: hidden;
 }
+nav {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
 nav div div ul li a:hover {
     background-color: #00bfff;
     cursor: pointer;
@@ -179,6 +183,10 @@ section {
   text-align: center;
 }
 
+.faqs {
+  font-size: normal;
+}
+
 .subject .row {
   margin-top: 20px;
   text-align: center;
@@ -191,14 +199,12 @@ section {
   font-weight: 420;
 }
 
-.faqs{
-  font-size: normal;
-}
-
-footer {
-  background-color: #1e90ff;
-  color: white;
+#instagram {
   text-align: center;
-  padding: 1em;
-  width: 100%;
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#copyright {
+  background-color: rgba(0, 0, 0, 0.5);
 }

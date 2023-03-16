@@ -90,6 +90,11 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .info .container {

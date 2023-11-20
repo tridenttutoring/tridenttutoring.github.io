@@ -22,7 +22,7 @@ The STEM page on the Trident Tutoring website provides information about science
 The Humanities page on the Trident Tutoring website provides information about subjects such as history, literature, philosophy, and social sciences.
 
 ### Languages
-The Languages page on the Trident Tutoring website provides information about various languages such as Spanish, French, German, Chinese, and more.
+The Languages page on the Trident Tutoring website provides information about various languages such as French and Spanish.
 
 ### Tutors
 The Tutors page on the Trident Tutoring website provides information about the tutors available for different subjects. It lists the names and areas of expertise of each tutor.

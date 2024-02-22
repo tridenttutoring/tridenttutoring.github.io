@@ -1,10 +1,3 @@
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
 let a = `I am an avid physicist, having won the School Physics Prize each year and my proficiency in this subject resulted in my getting gold in the Intermediate Physics Online Challenge. I also was entered into the Intermediate Physics Challenge Competition (BPhO) by my teacher, in which I achieved gold and came top ten nationally. My interest in science has lead to me completing work experience in the Science museum.
 <br><br>
 I am also interested in high-level mathematics, having won Gold awards and achieved high marks in the Senior Mathematical Challenge. I am a programming enthusiast with a specific focus on Python and iOS mobile app development and have used Python to develop games using the PyGame module and Object Oriented Programming. I have also created pathfinding programs using Dijkstra and A-Star. I have explored machine learning with logistic regression and K-Nearest Neighbours techniques and have built a program to analyse disaster-related tweets to help rescue efforts using Natural Language Processing. I am currently developing an AI model to detect distracted drivers from images of them. I know HTML and have used it to code front end website layouts as well as Swift to code iOS apps such as weather, live currency conversion and music apps.  
@@ -22,21 +15,29 @@ I also am interested in rhetorical writing and public speaking, having recently 
 I have a passion for languages; in the past I have studied Latin and Classical Greek, and currently study Spanish and French, in addition to knowing Russian to heritage or native level. At school, I won the French Prize, and attained grade 9s in all my GCSEs; I am currently further pursuing the DELF B1 qualification. In my spare time I also do volunteer translations of historical documents from Russian to English, helping the History of Jewish Communities in Ukraine “JewUA” project. I also entered the Advanced paper of the UK Linguistics Olympiad.  
 <br><br>
 I have done volunteer work with children in the past, and have experience as an assistant then a teacher at academic weekend and holiday camps during the last 3-4 years. `;
-tutorColumn = 
-`<div class="col">
-<div class="category card">
-    <div class="category card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-    </div>
-</div>
-</div>`
-descriptions = [{name:"Sathvik", desc:s}, {name:"Daniel",desc:d}, {name:"Aarav", desc:a}];
-descriptions = shuffleArray(descriptions);
+
+descriptions = [
+    {name: "Sathvik", desc: s}, 
+    {name: "Daniel",desc: d}, 
+    {name: "Aarav", desc: a},
+    {name: "Aratrika", desc: `Being shortlisted for the The Foyle Young Poets of the Year Award, having published poems with The Chariot Press, The Gyroscope Review, and more, I have always had an incredible passion for literature and poetry. At my previous school, I won numerous literature awards and was commended by English professors for my work. I have also taught English at a myriad of different levels before, from basic conversational English all the way up to 11+, and my pupils received top scores in their exams and received offers from some of the most prestigious schools in the country. I still continue to publish poetry and literature throughout my A Level process.
+    Having had an interest in mathematics since I was young, I have won the Best in Mathematics and UKMT Award from my previous school for two years consecutively. I have gotten a distinction on the Mathematical Olympiad for Girls, as well as a Gold in the Hamilton and Maclaurin Olympiads and in the Senior Maths Challenge. I have tutored mathematics to girls in Indian state schools as well as to pupils in the UK to a 13+ level before, and again all my pupils saw extremely high scores in the maths portions of their exams. Having taken both Maths and Further Maths at a GCSE Level and gaining strong 9’s in both, as well as taking the two subjects for A Level, I have an extremely solid foundation in GCSE mathematics. I am also well-versed in the parts of mathematics that we don’t focus on in school such as graph theory, topology and computer science, due to summer schools such as NYU’s Summer Math Program for Young Scholars and Wharton’s Global Youth Program.
+    Taking History A Level, I am extremely enthusiastic about the subject and have written historically accurate literature in the past, involving heavy amounts of research and knowledge regarding the subject. With one of my highest 9’s being history, I understand how to structure and frame essays for the GCSE, which is fundamental to obtaining a high grade. History also acts as fundamental knowledge for one of my primary extracurriculars, debating, where general knowledge of a country’s political history is necessary. Currently on Westminster’s debating team, I have been to both Oxbridge Debating and ICYD finals in the last 3 years, as well as being the 12th best novice out of over 100 people for Harvard World Schools 2023.`}, 
+    {name: "Andrew", desc: `I have been working as a professional tutor in Hong Kong for three years, with Latin and music theory being my main areas of focus. To that end, I have achieved Grade 8 music theory at the age of 9 and have tutored two students to distinction-level ABRSM Grade 8 theory. I also teach English (Second Language) and Mathematics to younger students.
+    I am a proficient speaker of Standard Mandarin, Shanghainese, and Cantonese, and have qualifications for French, German, and Japanese. I have also worked with undergraduate linguistics students in Hong Kong University, and have been invited to Cambridge multiple times to discuss findings regarding the diachronics of Northern Wu and its surrounding regiolects. I am currently working on a reliable separation of the Mandarinic stratum in Hangzhounese, and will be publishing my results soon for peer review.`}, 
+    {name: "Lane", desc: `I am a year 12 student at westminster school, I study Maths, Further Maths, Physics and Spanish for A-level and received a grade 9 (the top grade) at gcse for every subject I will be tutoring for, and got it for every other subject bar one. 
+
+    I also achieved a score of 1550 in my first try of the SATs. I am very interested by languages, I have studied latin previously, I also took ancient Greek for GCSE as well as French, in which I got a grade 9 for both, and currently study Spanish for A-level. I received 197/200 on my Spanish GCSE and can definitely help with understanding any Spanish work, whether it’s reading, writing, listening, or anything in between.
+    
+    My main theme within my subjects is maths, I have a huge passion for maths and maths-like subjects and for that reason will be able to help with anything related to maths. 
+
+    I have also helped with tutoring before so I should be able to cater towards your needs and help you figure out the best way to improve.`},
+];
+
 tutors = document.getElementById('tutors');
 descriptions.forEach(element => {
     tutors.innerHTML += 
-    `<div class="col mb-3">
+    `<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
     <div class="category card">
         <div class="category card-body">
             <h5 class="card-title">${element.name}</h5>

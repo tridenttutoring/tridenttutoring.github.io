@@ -1,5 +1,5 @@
 # tridenttutoring.github.io
-This is the official website for Trident Tutoring, a leading online tutoring service that offers personalized and affordable tutoring services to students.
+This is the official website for Trident Tutoring, a leading online tutoring service that offers free, personalised tutoring services to students.
 
 ## Technologies Used
 The website is built using the following technologies:

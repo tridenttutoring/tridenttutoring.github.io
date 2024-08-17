@@ -20,23 +20,11 @@ descriptions = [
     {name: "Sathvik", desc: s}, 
     {name: "Daniel",desc: d}, 
     {name: "Aarav", desc: a},
-    {name: "Aratrika", desc: `Being shortlisted for the The Foyle Young Poets of the Year Award, having published poems with The Chariot Press, The Gyroscope Review, and more, I have always had an incredible passion for literature and poetry. At my previous school, I won numerous literature awards and was commended by English professors for my work. I have also taught English at a myriad of different levels before, from basic conversational English all the way up to 11+, and my pupils received top scores in their exams and received offers from some of the most prestigious schools in the country. I still continue to publish poetry and literature throughout my A Level process.
-    Having had an interest in mathematics since I was young, I have won the Best in Mathematics and UKMT Award from my previous school for two years consecutively. I have gotten a distinction on the Mathematical Olympiad for Girls, as well as a Gold in the Hamilton and Maclaurin Olympiads and in the Senior Maths Challenge. I have tutored mathematics to girls in Indian state schools as well as to pupils in the UK to a 13+ level before, and again all my pupils saw extremely high scores in the maths portions of their exams. Having taken both Maths and Further Maths at a GCSE Level and gaining strong 9’s in both, as well as taking the two subjects for A Level, I have an extremely solid foundation in GCSE mathematics. I am also well-versed in the parts of mathematics that we don’t focus on in school such as graph theory, topology and computer science, due to summer schools such as NYU’s Summer Math Program for Young Scholars and Wharton’s Global Youth Program.
-    Taking History A Level, I am extremely enthusiastic about the subject and have written historically accurate literature in the past, involving heavy amounts of research and knowledge regarding the subject. With one of my highest 9’s being history, I understand how to structure and frame essays for the GCSE, which is fundamental to obtaining a high grade. History also acts as fundamental knowledge for one of my primary extracurriculars, debating, where general knowledge of a country’s political history is necessary. Currently on Westminster’s debating team, I have been to both Oxbridge Debating and ICYD finals in the last 3 years, as well as being the 12th best novice out of over 100 people for Harvard World Schools 2023.`}, 
-    {name: "Andrew", desc: `I have been working as a professional tutor in Hong Kong for three years, with Latin and music theory being my main areas of focus. To that end, I have achieved Grade 8 music theory at the age of 9 and have tutored two students to distinction-level ABRSM Grade 8 theory. I also teach English (Second Language) and Mathematics to younger students.
-    I am a proficient speaker of Standard Mandarin, Shanghainese, and Cantonese, and have qualifications for French, German, and Japanese. I have also worked with undergraduate linguistics students in Hong Kong University, and have been invited to Cambridge multiple times to discuss findings regarding the diachronics of Northern Wu and its surrounding regiolects. I am currently working on a reliable separation of the Mandarinic stratum in Hangzhounese, and will be publishing my results soon for peer review.`}, 
-    {name: "Lane", desc: `I am a year 12 student at westminster school, I study Maths, Further Maths, Physics and Spanish for A-level and received a grade 9 (the top grade) at gcse for every subject I will be tutoring for, and got it for every other subject bar one. 
-
-    I also achieved a score of 1550 in my first try of the SATs. I am very interested by languages, I have studied latin previously, I also took ancient Greek for GCSE as well as French, in which I got a grade 9 for both, and currently study Spanish for A-level. I received 197/200 on my Spanish GCSE and can definitely help with understanding any Spanish work, whether it’s reading, writing, listening, or anything in between.
-    
-    My main theme within my subjects is maths, I have a huge passion for maths and maths-like subjects and for that reason will be able to help with anything related to maths. 
-
-    I have also helped with tutoring before so I should be able to cater towards your needs and help you figure out the best way to improve.`},
 ];
 
-tutors = document.getElementById('tutors');
+founders = document.getElementById('founders');
 descriptions.forEach(element => {
-    tutors.innerHTML += 
+    founders.innerHTML += 
     `<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
     <div class="category card">
         <div class="category card-body">

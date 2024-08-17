@@ -24,8 +24,8 @@ The Humanities page on the Trident Tutoring website provides information about s
 ### Languages
 The Languages page on the Trident Tutoring website provides information about various languages such as French and Spanish.
 
-### Tutors
-The Tutors page on the Trident Tutoring website provides information about the tutors available for different subjects. It lists the names and areas of expertise of each tutor.
+### Founders
+The Founders page on the Trident Tutoring website provides information about the founders. It lists the names and areas of expertise of each founder.
 
 ## Features
 The website offers the following features:

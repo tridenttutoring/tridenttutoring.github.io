@@ -85,10 +85,9 @@ section {
 }
 .section-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   color: blue;
 }
@@ -182,6 +181,38 @@ section {
 
 .subjects {
   text-align: center;
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #ffffff, #f0f9ff); /* Modern gradient */
+  border-radius: 20px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 255, 0.2), -8px -8px 20px rgba(0, 0, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .testimonial-card {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonial-card {
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+}
+.testimonial-card:hover {
+  transform: translateY(-5px); /* Slightly more pronounced hover effect */
+}
+.quote-icon {
+  font-size: 4rem;
+  color: #007bff;
+  opacity: 0.2;
+  top: -10px;
+  left: 5px;
 }
 
 .faqs {

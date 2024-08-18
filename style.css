@@ -183,7 +183,7 @@ section {
   text-align: center;
 }
 
-.testimonial-card {
+.testimonial-section .testimonial-card {
   background: linear-gradient(145deg, #ffffff, #f0f9ff); /* Modern gradient */
   border-radius: 20px;
   box-shadow: 8px 8px 20px rgba(0, 0, 255, 0.2), -8px -8px 20px rgba(0, 0, 255, 0.2);
@@ -193,21 +193,21 @@ section {
   margin-right: 10px;
 }
 @media (min-width: 768px) {
-  .testimonial-card {
+  .testimonial-section  .testimonial-card {
       margin-left: 20px;
       margin-right: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .testimonial-card {
+  .testimonial-section  .testimonial-card {
       margin-left: 40px;
       margin-right: 40px;
   }
 }
-.testimonial-card:hover {
+.testimonial-section .testimonial-card:hover {
   transform: translateY(-5px); /* Slightly more pronounced hover effect */
 }
-.quote-icon {
+.testimonial-section .quote-icon {
   font-size: 4rem;
   color: #007bff;
   opacity: 0.2;
